@@ -16,11 +16,10 @@ public class Consumer {
         prop.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         prop.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         prop.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "clientId");
-        prop.setProperty(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "false");
         prop.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 
         // create consumer
-        final KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(prop);
+        final KafkaConsumer<String, String> consumer = new KafkaConsumer<>(prop);
 
         // subscribe to topic
         consumer.subscribe(Arrays.asList("a"));
