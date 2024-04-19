@@ -1,0 +1,21 @@
+//command:
+// protoc -I=$SRC_DIR --java_out=$DST_DIR $SRC_DIR/proto-file.proto
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package proto;
+
+message Person {
+
+  message PhoneNumber {
+    optional string number = 1;
+  }
+
+  repeated PhoneNumber phones = 4;
+}
+
+message AddressBook {
+  repeated Person people = 1;
+}
