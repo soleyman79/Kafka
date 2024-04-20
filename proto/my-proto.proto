@@ -7,15 +7,6 @@ option java_multiple_files = true;
 
 package proto;
 
-message Person {
-
-  message PhoneNumber {
-    optional string number = 1;
-  }
-
-  repeated PhoneNumber phones = 4;
-}
-
-message AddressBook {
-  repeated Person people = 1;
+message Message {
+  string message = 1;
 }

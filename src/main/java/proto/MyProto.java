@@ -16,20 +16,10 @@ public final class MyProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_proto_Person_descriptor;
+    internal_static_proto_Message_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_proto_Person_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_proto_Person_PhoneNumber_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_proto_Person_PhoneNumber_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_proto_AddressBook_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_proto_AddressBook_fieldAccessorTable;
+      internal_static_proto_Message_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -39,34 +29,19 @@ public final class MyProto {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016my-proto.proto\022\005proto\"b\n\006Person\022)\n\006pho" +
-      "nes\030\004 \003(\0132\031.proto.Person.PhoneNumber\032-\n\013" +
-      "PhoneNumber\022\023\n\006number\030\001 \001(\tH\000\210\001\001B\t\n\007_num" +
-      "ber\",\n\013AddressBook\022\035\n\006people\030\001 \003(\0132\r.pro" +
-      "to.PersonB\002P\001b\006proto3"
+      "\n\016my-proto.proto\022\005proto\"\032\n\007Message\022\017\n\007me" +
+      "ssage\030\001 \001(\tB\002P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_proto_Person_descriptor =
+    internal_static_proto_Message_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_proto_Person_fieldAccessorTable = new
+    internal_static_proto_Message_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_proto_Person_descriptor,
-        new java.lang.String[] { "Phones", });
-    internal_static_proto_Person_PhoneNumber_descriptor =
-      internal_static_proto_Person_descriptor.getNestedTypes().get(0);
-    internal_static_proto_Person_PhoneNumber_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_proto_Person_PhoneNumber_descriptor,
-        new java.lang.String[] { "Number", });
-    internal_static_proto_AddressBook_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_proto_AddressBook_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_proto_AddressBook_descriptor,
-        new java.lang.String[] { "People", });
+        internal_static_proto_Message_descriptor,
+        new java.lang.String[] { "Message", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
